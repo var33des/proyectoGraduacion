@@ -1,0 +1,138 @@
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+    width: 200px;
+    padding: 15px;
+    height: calc(100vh - 60px); /* Altura total menos la altura del encabezado */
+    position: fixed;
+    top: 60px; /* Ajuste para debajo del encabezado */
+    left: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #3498db;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+    box-sizing: border-box;
+}
+
+.seccion {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.stat-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.stat-card h3 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+}
+
+.stat-card p {
+    font-size: 2.5rem;
+    color: #27ae60;
+    margin: 0;
+}
+
+.alert {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.alert ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alert li {
+    margin: 5px 0;
+}
+
+.stat-card.alert {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.stat-card.alert ul {
+    padding: 0;
+}
+
+.stat-card.alert li {
+    margin: 5px 0;
+}
+
+.redirect-button {
+    margin: 20px;
+    text-align: center;
+}
+
+.redirect-button .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.redirect-button .btn:hover {
+    background-color: #0056b3;
+}
